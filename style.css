@@ -85,27 +85,88 @@ body{
 .texts p{
   font-size: 20px;
   line-height: 1.6;
-  font-weight: bold;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.connect{
+  margin-top: 50px;
+  text-align: center;
+  padding: 20px;
+}
+
+.connect h3{
+  font-family:Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 20px;
 }
 
 .buttons{
   margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 .buttons button{
-  padding: 20px 40px;
-  margin-left: 20px;
-  font-size: 1.5rem;
+  padding: 15px 30px;
+  font-size: 1rem;
   border: none;
   background-color: black;
   color: white;
   border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s ease, background-color 0.3s ease;
+}
+
+.buttons button a{
+  text-decoration: none;
+  color: white;
 }
 
 .buttons button:hover{
-  background-color: black;
+  background-color: #444;
+  transform: scale(1.05);
 }
+
+.skills{
+  background-color: black;
+  color: white;
+  display: grid;
+  place-items: center;
+  padding: 50px;
+  height: 100vh;
+}
+
+.skills h2{
+  font-size: 2rem;
+  letter-spacing: 5px;
+}
+
+.skill-icons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 100px;
+  gap: 30px;
+  max-width: 500px;
+  row-gap: 70px;
+}
+
+
+.skill-icons img{
+  width: 100px;
+}
+
+
+
+
+
+
+
 
 
 @media(max-width: 768px){
@@ -124,6 +185,21 @@ body{
     gap: 20px;
     max-width: 100%;
   }
+
+  .buttons{
+    gap: 15px;
+  }
+
+  .buttons button{
+    padding: 12px 25px;
+    font-size: 0.9rem;
+  }
+
+  .buttons button:hover{
+    background-color: #444;
+    transform: scale(1.05);
+  }
+
 }
 
 @media(max-width: 576px){
@@ -142,6 +218,26 @@ body{
     font-size: 14px;
     line-height: 1.4;
   }
+
+  .buttons{
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .buttons button{
+    width: 100%;
+    max-width: 200px;
+  }
+
+  .buttons button:hover{
+    background-color: #444;
+    transform: scale(1.05);
+  }
+
+  .skills h2{
+    font-size: 1.5rem;
+  }
+ 
 }
 
 
