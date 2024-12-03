@@ -229,6 +229,53 @@ body{
   transform: scale(1.05);
 }
 
+.contact{
+  background: black;
+  color: white;
+  padding: 50px;
+  display: grid;
+  place-items: center;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto;
+  gap: 20px;
+}
+
+.contact h2{
+  font-size: 2rem;
+  letter-spacing: 5px;
+  margin-bottom: 50px;
+}
+
+.fields{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 20px;
+}
+
+.btn{
+  width: 100%;
+  padding: 20px 30px;
+  background-color: rgb(173, 177, 180);
+  border: none;
+  border-radius: 60px;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: transform 0.3s ease;
+  box-shadow: 5px 5px 10px rgba(249, 248, 248, 0.2);
+}
+
+.btn:hover{
+  transform: scale(1.05);
+}
+
+.map{
+  margin-bottom: 50px;
+  margin-top: 50px;
+  width: 100%;
+}
 
 
 
@@ -267,6 +314,8 @@ body{
     transform: scale(1.05);
   }
 
+  
+
 }
 
 @media(max-width: 576px){
@@ -304,6 +353,8 @@ body{
   .skills h2{
     font-size: 1.5rem;
   }
+
+  
  
 }
 
